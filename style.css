@@ -1,0 +1,591 @@
+/* Navbar */
+	
+	
+	#brandpic {
+	
+		width: 3em;
+		height: 2em;
+		margin-right: 0.5em;
+	
+	}
+	
+
+	.btn-primary:hover {
+	
+		background-color: #F9D334;
+	
+	}
+		
+	#donate-link {
+	 
+		border-radius: 5px;
+		background-color: red;
+		text-transform: uppercase;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+	
+	#donate-link:hover {
+		
+		background-color: black; 
+				
+	}
+
+	.dropdown-menu {
+	
+		background-color: #F9D334; 
+		color: #56565A;
+		margin: 0;
+
+	
+	}
+	
+	.dropdown-menu a {
+		
+		color: #56565A !important;
+		margin-right: 0 !important;
+		
+	}
+	
+	.dropdown-item a {
+	
+		color: #56565A;
+		margin: 0;
+	
+	}
+	
+	.dropdown-item:hover {
+	
+		background-color: #56565A;
+		color: #F9D334 !important;
+	
+	}
+	
+	
+	.navbar {
+	
+		background-color: #56565A;
+		border-bottom: 5px solid #F9D334;
+		color: #56565A;
+		padding: 0;
+	
+	}
+	
+	.navbar .navbar-nav .nav-link {
+    
+		color: #000000;
+		font-size: 1.1em;
+	
+	}
+	
+		.navbar .navbar-nav .nav-link:hover {
+    
+		color: #F9D334;
+	
+	}
+	
+	.navbar-brand {
+		
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5em;
+		text-decoration: underline;
+		
+	}
+	
+	.navbar-collapse {
+		
+		text-align: center;
+		margin: 1em;
+		margin-right: 0 !important;
+	
+	}
+	
+	.navbar .nav-item {
+		
+		padding: 0.5em;
+		
+	}
+	
+	.navbar .nav-item .active {
+	
+		background-color: #F9D334;
+		border-radius: 5px;
+		padding: cover;
+		color: #56565A !important; 
+	
+	}
+	
+	.navbar .navbar-nav .nav-link::after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  background-color: #F9D334;
+	  color: transparent;
+	  width: 0%;
+	  content: '.';
+	  height: 3px;
+	
+	}
+	
+	.navbar .navbar-nav .nav-link:hover::after {
+	
+		width: 100%;
+	
+	}
+	
+	.navbar-nav {
+		
+		float: right;
+		
+	}
+	
+	.navbar .navbar-nav .nav-link {
+    
+		position: relative;
+		color: #000000;
+		font-size: 1.5em;
+		transition: all 0.5s;
+	
+	}
+	
+	#navbarNavDropdown a {
+		
+		color: #F9D334;
+		
+	}
+	
+	.sm-icons {
+		
+		flex-direction: row;
+		justify-content: center;
+	
+	}
+	
+	@media only screen and (max-width: 600px) {
+	
+	.navbar-brand span {
+
+			display: none;
+		
+		}
+		
+	}
+	
+	@media only screen and (max-width: 1200px) {
+		
+		.nav-item {
+		
+			padding-right: 1em;
+		
+		}
+	
+	}
+	
+/* End Navbar */
+
+
+/* Jumbotron */
+
+	#contributeButton, #contributeEmail, #contributeZip {
+		
+		margin: 5px 5px 5px 0;
+		
+	}
+	
+	.display-4 {
+	
+		padding-top: 25px;
+		font-weight: bold;
+	
+	}
+	
+	hr {
+	
+		width: 60%;
+		border: 1px solid black;
+	
+	}	
+	
+	.jumbotron {
+		margin: 0 auto;
+		background-image: url(images/mspic.jpg);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%; 
+		padding: 0.05rem 1rem;
+		margin-bottom: 2rem;
+		border-radius: .3rem;
+		font-weight: bold;
+		border-bottom: 5px solid #F9D334;
+		overflow: hidden;
+		display: flex;
+		position: relative;
+		color: white;
+	}
+
+	.jumbotron h1 {
+		
+		color: black;
+		
+	}
+	
+	#jumbotronContent {
+		
+		float: left;
+		padding: 0;
+		max-width: 35vw;
+		margin-bottom: 25px;
+		
+	}
+	
+	#jumbotronImage {
+		
+		min-height: 50%;
+		max-height: 90%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		max-width: 60vw;
+		
+	}
+	
+	.lead {
+	
+		font-weight: bold;
+	
+	}
+	
+/*End Jumbotron*/
+	
+
+/* Main Body between Header/Jumbotron and Footer */
+
+	#placeholder {
+	
+		height:100%;
+		width: 100%;
+		margin: 50px;
+	
+	}	
+
+/* End Main Body */
+
+
+/* Footer and Copywright Bar */
+
+	#banner {
+	
+		width: 80%;
+	
+	}
+	
+	#contact {
+		
+		text-align: center;
+		margin-bottom: 25px;
+		
+	}
+	
+	footer {
+		
+		border-top: 5px solid #F9D334;
+		
+	}
+	
+	footer a {
+		
+		text-decoration: none;
+		
+	}
+	
+	footer a:hover {
+		
+		color: #F9D334 !important;
+		
+	}
+	
+	footer h5 {
+		
+		text-decoration: underline;
+		margin-top: 40px;
+		
+	}
+		
+	#paidFor {
+	
+		color: black;
+		border: 1px solid black;
+		padding: 5px;
+	
+	}
+	.text-white {
+	
+		background-color: #56565A;
+		
+	}
+
+/* End Footer and Copywright Bar */
+
+.modal {
+  max-width: 80vw;
+  max-height: 90vh;
+  background-color: #F7F0E8;
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 5%;
+  bottom: 5%;
+  z-index: 10;
+  border: 1px solid #3a3a3a;
+  border-radius: .25em;
+  box-shadow: 0 .25em .5em rgba(0, 0, 0, .25);
+  transition: opacity .5s ease-out, visibility 0s ease-out 1s, transform .5s ease-out .5s;
+  backface-visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(.8) translate3d(0,0,0);
+  pointer-events: none;
+}
+
+.modal[aria-hidden="false"] {
+  position: fixed;
+  transition: opacity .5s ease-out, visibility 0s ease-out 0s, transform .5s ease-out 0s;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translate3d(0,0,0);
+  pointer-events: auto;
+}
+
+
+/* Class added to body tag and id="content" tag when modal is open */
+
+.-modal-open {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+/* Light box properties */
+
+.lightbox {
+  text-indent: -200em;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* places the modal overlay between the main page (0) and the modal dialog (10) */
+  z-index: 5;
+  cursor: pointer;
+  transition: opacity .5s ease-out, visibility 0s ease-out .5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.lightbox-on {
+  transition: opacity .5s ease-out, visibility 0s ease-out 0s;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.lightbox-on:hover {
+  /* Stolen from trickle.js. Under consideration. SVGs will not work here */
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAANpJREFUOBGNkz0KAjEQhYPYWXgCKws7LcXWyt7WG4i9jegBvIJ4AvEyXsRCsBDiN0sGkiE/O/A2O9n3viS7rPPeb9ETrVzPwrtHDzR1XF5I6oPWLQaeq5hDXQRw0I6xCuF5HH7Tz7oFuTkhrSyEhza8THaLoQhphpWUg/QOFyA/AFpy5nTbGrIjxvg4AiiGBzYc+rGZH9KPzFy+ZbX4bX9l+VDZr5NQMMbhbtvMxccpQ3JhpTchtXATQviItIpvW0CY7HHm8c9UDRd2chbABt3RQk2tEe8O3dDkD4JQ4iOR7BMpAAAAAElFTkSuQmCC"), pointer;
+}
+
+
+/* Modal title and description */
+
+.modal_title,
+.modal_desc {
+  position: absolute;
+  top: 5px;
+  left: -200em;
+  background-color: #fff;
+  color: #000;
+  text-shadow: 0 0 0 #fff;
+  font-size: 20px;
+  padding: 0.125em .25em;
+  font-family: Tesco_W_Rg, sans-serif;
+  margin: 0;
+}
+
+.modal_title:focus,
+.modal_desc:focus {
+  left: 5px;
+}
+
+[aria-hidden="false"] .modal_title {
+  transition: opacity .5s ease-out 3s;
+  opacity: 0;
+}
+
+.modal_title,
+.modal_title:focus {
+  opacity: 1;
+  transition: opacity .5s ease-out;
+}
+
+
+/* The iframe */
+
+.modal_iframe {
+  transition: opacity .5s ease-out, visibility 0s ease-out 1s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal_iframe-on {
+  transition: opacity .8s ease-out, visibility 0s ease-out 0s;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* The modal pop-ups close button, appears last in the modal but is moved visually to the top right of the pop-up */
+
+.modal_lnk-close {
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border: 0 solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  box-shadow: 0 .25em .5em rgba(0, 0, 0, .25);
+  overflow: hidden;
+  transition: background-color .3s ease-out;
+}
+
+.modal_lnk-close:hover,
+.modal_lnk-close:active,
+.modal_lnk-close:focus {
+  background-color: #c00;
+  outline: 0 solid;
+}
+
+.modal_lnk-close span {
+  position: absolute;
+  top: 0;
+  left: -200em;
+  display: block;
+}
+
+.svg-close {
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+
+/* Modal opening link */
+
+.lnk_modal-open {
+  display: inline-block;
+  text-decoration: none;
+  border: 0 solid;
+  margin: 0 auto;
+  transition: box-shadow .3s ease-out, filter .3s ease-out;
+}
+
+.lnk_modal-open:hover {
+  -webkit-filter: contrast(120%);
+  filter: contrast(120%);
+}
+
+.lnk_modal-open:hover,
+.lnk_modal-open:focus {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, .6);
+}
+
+.lnk_modal-open:focus {
+  outline: none;
+}
+
+.lnk_modal-open:active {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+
+[role="dialog"][aria-hidden="true"] .modal_iframe {
+  display: none;
+}
+
+[role="dialog"][aria-hidden="false"] .modal_iframe {
+  display: block;
+}
+
+.img_modal-open {
+  display: block
+}
+
+
+/* Modal SVG (Tesco) loading animation version 2 (overlaid on itself and out of phase) */
+
+[class*="svg-loading"] {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  z-index: -1;
+  transition: opacity .3s ease-out;
+  backface-visibility: hidden;
+}
+
+.svg-loading {
+  fill: #00539f;
+  -webkit-animation: rotate 4s linear 0s infinite;
+  animation: rotate 4s linear 0s infinite;
+}
+
+.svg-loading2 {
+  /* Match to .modal background colour for full effect */
+  fill: #F7F0E8;
+  -webkit-animation: rotate 5s linear 1s infinite;
+  animation: rotate 5s linear 1s infinite;
+}
+
+.svg-loading.OFF {
+  opacity: 0;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg) translate3d(0,0,0);
+    transform: rotate(360deg) translate3d(0,0,0);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg) translate3d(0,0,0);
+    transform: rotate(360deg) translate3d(0,0,0);
+  }
+}
+
+xa {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 0 2px #1a1a1a
+}
+

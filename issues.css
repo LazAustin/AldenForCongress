@@ -1,0 +1,350 @@
+/* Navbar */
+	
+	
+	#brandpic {
+	
+		width: 3em;
+		height: 2em;
+		margin-right: 0.5em;
+	
+	}
+	
+
+	.btn-primary:hover {
+	
+		background-color: #F9D334;
+	
+	}
+		
+	#donate-link {
+	 
+		border-radius: 5px;
+		background-color: red;
+		text-transform: uppercase;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+	
+	#donate-link:hover {
+		
+		background-color: black; 
+				
+	}
+
+	.dropdown-menu {
+	
+		background-color: #F9D334; 
+		color: #56565A;
+		margin: 0;
+
+	
+	}
+	
+	.dropdown-menu a {
+		
+		color: #56565A !important;
+		margin-right: 0 !important;
+		
+	}
+	
+	.dropdown-item a {
+	
+		color: #56565A;
+		margin: 0;
+	
+	}
+	
+	.dropdown-item:hover {
+	
+		background-color: #56565A;
+		color: #F9D334 !important;
+	
+	}
+	
+	
+	.navbar {
+	
+		background-color: #56565A;
+		border-bottom: 5px solid #F9D334;
+		color: #56565A;
+		padding: 0;
+	
+	}
+	
+	.navbar .navbar-nav .nav-link {
+    
+		color: #000000;
+		font-size: 1.1em;
+	
+	}
+	
+		.navbar .navbar-nav .nav-link:hover {
+    
+		color: #F9D334;
+	
+	}
+	
+	.navbar-brand {
+		
+		font-family: 'Lato', sans-serif;
+		font-size: 1.5em;
+		text-decoration: underline;
+		
+	}
+	
+	.navbar-collapse {
+		
+		text-align: center;
+		margin: 1em;
+		margin-right: 0 !important;
+	
+	}
+	
+	.navbar .nav-item {
+		
+		padding: 0.5em;
+		
+	}
+	
+	.navbar .nav-item .active {
+	
+		background-color: #F9D334;
+		border-radius: 5px;
+		padding: cover;
+		color: #56565A !important; 
+	
+	}
+	
+	.navbar .navbar-nav .nav-link::after {
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	  background-color: #F9D334;
+	  color: transparent;
+	  width: 0%;
+	  content: '.';
+	  height: 3px;
+	
+	}
+	
+	.navbar .navbar-nav .nav-link:hover::after {
+	
+		width: 100%;
+	
+	}
+	
+	.navbar-nav {
+		
+		float: right;
+		
+	}
+	
+	.navbar .navbar-nav .nav-link {
+    
+		position: relative;
+		color: #000000;
+		font-size: 1.5em;
+		transition: all 0.5s;
+	
+	}
+	
+	#navbarNavDropdown a {
+		
+		color: #F9D334;
+		
+	}
+	
+	.sm-icons {
+		
+		flex-direction: row;
+		justify-content: center;
+	
+	}
+	
+	@media only screen and (min-width: 1201px) {
+	
+	.nav-item {
+
+			padding-right: 5em;
+		
+		}
+		
+	}
+	
+	@media only screen and (max-width: 1200px) {
+		
+		.nav-item {
+		
+			padding-right: 1em;
+		
+		}
+	
+	}
+	
+/* End Navbar */
+
+
+/* Jumbotron */
+
+	#contributeButton, #contributeEmail, #contributeZip {
+		
+		margin: 5px 5px 5px 0;
+		
+	}
+	
+	.display-4 {
+	
+		padding-top: 25px;
+		font-weight: bold;
+	
+	}
+	
+	hr {
+	
+		width: 60%;
+		border: 1px solid black;
+	
+	}	
+	
+	.jumbotron {
+		margin: 0 auto;
+		background-image: url(images/mspic.jpg);
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%; 
+		padding: 0.05rem 1rem;
+		margin-bottom: 2rem;
+		border-radius: .3rem;
+		font-weight: bold;
+		border-bottom: 5px solid #F9D334;
+		overflow: hidden;
+		display: flex;
+		position: relative;
+		color: white;
+	}
+
+	.jumbotron h1 {
+		
+		color: black;
+		
+	}
+	
+	#jumbotronContent {
+		
+		float: left;
+		padding: 0;
+		max-width: 35vw;
+		margin-bottom: 25px;
+		
+	}
+	
+	#jumbotronImage {
+		
+		min-height: 50%;
+		max-height: 90%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		max-width: 60vw;
+		
+	}
+	
+	.lead {
+	
+		font-weight: bold;
+	
+	}
+	
+/*End Jumbotron*/
+	
+
+/* Main Body between Header/Jumbotron and Footer */
+
+	body {
+		
+		height: 100%;
+		
+	}
+	
+	#bodyContainer {
+		
+		margin: 50px;
+		height: 100%;
+		max-width: 1500px;
+		
+	}
+
+	#bodyContainer .border {
+		
+			margin: 10px;
+			border-radius: 10px;
+			justify-content: center;
+	
+	}
+	
+		#bodyContainer img {
+		
+			margin-right: 10px;
+	
+	}
+	
+
+/* End Main Body */
+
+
+/* Footer and Copywright Bar */
+
+	#contact {
+		
+		text-align: center;
+		margin-bottom: 25px;
+		
+	}
+	
+	footer {
+		
+		border-top: 5px solid #F9D334;
+		
+	}
+	
+	footer a {
+		
+		text-decoration: none;
+		
+	}
+	
+	footer a:hover {
+		
+		color: #F9D334 !important;
+		
+	}
+	
+	footer h5 {
+		
+		text-decoration: underline;
+		margin-top: 40px;
+		
+	}
+		
+	#paidFor {
+	
+		color: black;
+		border: 1px solid black;
+		padding: 5px;
+	
+	}
+	.text-white {
+	
+		background-color: #56565A;
+		
+	}
+
+/* End Footer and Copywright Bar */
+
+
+
