@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<!--My Own CSS-->
+	<link rel="stylesheet" href="style.css">
+	<!--jQuery CSS-->
+	<link href="jquery-ui.css" rel="stylesheet">		
+	
+	<!--Basic jQuery and jQueryUI scripts-->
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="jquery-ui.js"></script>
+			
+	<!--Title/tab-->
+    <title>Alden for Congress</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/circlesmall.png" />
+	
+	
+  </head>
+  
+  <body>
+  
+<!--Navbar-->
+
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<div class="container-fluid">
+			
+				<a class="navbar-brand" href="index.html"><img id="brandpic" class="d-inline-block align-top" src="images/banner.jpg"><span>Alden Johnson for Congress</span></a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+					
+					<ul class="navbar-nav">
+						
+						<li class="nav-item">
+						  <a id="donate-link" class="nav-link" aria-current="page" href="https://secure.anedot.com/alden-for-congress/donate">Donate</a>
+						</li>
+						
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						
+						<li class="nav-item">
+						  <a class="nav-link" href="about.html">About</a>
+						</li>
+						
+						<li class="nav-item">
+						  <a class="nav-link" href="issues.html">Issues</a>
+						</li>
+					</u>
+					<ul class="navbar-nav sm-icons">
+						<li class="nav-item"><a class="nav-link" href="http://facebook.com/alden4liberty"><i class="fa fa-facebook-square"></i></a></li>
+						<li class="nav-item"><a class="nav-link" href="http://instagram.com/alden4liberty"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+						<!-- Might put back later						
+						<li class="nav-item dropdown">
+						
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Get Involved
+						  </a>
+						  
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Volunteer</a></li>
+							<li><a class="dropdown-item" href="#">Newsletter</a></li>
+							<div class="dropdown-divider"></div>
+							<li><a class="dropdown-item" href="#">Donate</a></li>
+						  </ul>
+						  
+						</li>
+						-->
+						
+				</div>
+			</div>
+		</nav>
+		
+<!-- End Navbar -->		
+		
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+          <iframe src="/user/dashboard" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+ </div>
+ <!--End Modal-->
+		
+<!-- Jumbotron -->
+
+		<div class="jumbotron">
+		  <div id="jumbotronContent">
+			  <h1 class="display-4">Alden Johnson</h1>
+			  <span class="lead">For Mississippi's 4th Congressional District</span>
+			  <hr>
+			  <p>All Your Freedoms, All the Time</p>
+			  <form id="contribute">
+				  <input type="email" id="contributeEmail" name="email" class="form-control" placeholder="Emailaddress@email.com"/>
+				  <input type="text" id="ContributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
+				  <a id="contributeButton" class="btn btn-primary btn-lg" href="#" role="button">Get Involved</a>
+			  </form>
+		  </div>
+		  <img id="jumbotronImage" src="images/aldenjohnsoncropped.png">
+		</div>
+		
+<!-- End Jumbotron -->
+
+		
+<!-- Main Body between navbar/jumbotron and footer -->
+		<div id="mainBody">
+			<p id="facebookFrame">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falden4liberty&tabs=timeline&width=500&height=340&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="340" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+			</p>
+
+		</div>
+		
+<!-- End Main Body -->
+				
+				
+<!-- Footer and Copywright Bar -->	
+	
+		<footer class="text-white text-center text-lg-start">
+		  <!-- Grid container -->
+		  <div class="container p-4">
+			<!--Grid row-->
+			<div class="row">
+			  <!--Grid column-->
+			  <div class="col-lg-6 col-md-12 mb-6 mb-md-0">
+				<h4 class="text-uppercase">Alden for Congress</h4>
+
+				<p>
+				  <img id="banner" src="images/aldenjohnson.jpg">
+				</p>
+			  </div>
+			  <!--Grid column-->
+
+			  <!--Grid column-->
+			  <div class="col-lg-2 col-md-4 mb-6 mb-md-0">
+				
+				<h5 class="text-uppercase mb-0">Menu</h5>
+				<ul class="list-unstyled">
+				  <li><a href="index.html" class="text-white">Home</a></li>
+				  <li><a href="donate.html" class="text-white">Donate</a></li>
+				  <li><a href="about.html" class="text-white">About</a></li>
+				  <li><a href="issues.html" class="text-white">Issues</a></li>
+				</ul>
+				
+			  </div>
+			  <!--Grid column-->
+
+			  <!--Grid column-->
+			  <div class="col-lg-2 col-md-4 mb-6 mb-md-0">
+				
+				<h5 class="text-uppercase mb-0">Affilliates</h5>
+				<ul class="list-unstyled">
+				  <li><a href="http://mslp.org" class="text-white">MSLP.org</a></li>
+				  <li><a href="http://lp.org" class="text-white">LP.org</a></li>
+				  <li><a href="https://www.facebook.com/alden4liberty" class="text-white">Facebook</a></li>
+				  <li><a href="https://www.instagram.com/alden4liberty/" class="text-white">Instagram</a></li>
+				</ul>
+				
+			  </div>
+			  
+			  <div class="col-lg-2 col-md-4 mb-6 mb-md-0">
+				
+				<h5 class="text-uppercase mb-0">More Info</h5>
+				<ul class="list-unstyled">
+				  <li><a href="https://ballotpedia.org/Mississippi%27s_4th_Congressional_District" class="text-white">Ballotpedia</a></li>
+				  <li><a href="https://en.wikipedia.org/wiki/Mississippi%27s_4th_congressional_district" class="text-white">Wikipedia</a></li>
+				  <li><a href="https://www.govtrack.us/congress/members/MS/4" class="text-white">GovTrack</a></li>
+				  
+				</ul>
+				
+			  </div>
+			  <!--Grid column-->
+			</div>
+			<!--Grid row-->
+		  </div>
+				  
+				  <!-- Contact Me -->
+				  <div id="contact">
+				  
+					<p>
+					<h5><strong>Contact Me:</strong></h5>
+					Alden Johnson<br>
+					123 Main Street<br>
+					Petal, MS 39465<br>
+					Phone: &#40 012 &#41 345-6789<br>
+					Email: alden4liberty22@gmail.com
+					
+					</p>
+				  
+				  </div>
+
+			  
+
+			
+
+<!-- Copyright Bar -->
+
+		  <div class="text-center p-3" style="background-color: #F9D334">
+			
+			<p><span id="paidFor">Paid for by Friends of Alden Johnson</span></p>
+			© 2020 Copyright:
+			<a class="text-dark" href="https://mdbootstrap.com/">Alden for Congress</a>
+		  
+		  </div>
+		  
+<!-- End Copyright Bar-->
+		  
+		</footer>
+
+<!-- End Footer and Copywright Bar -->	
+
+
+<!-- Miscellaneous Notes/Saved items -->	
+		
+		<!--
+		Might include this somewhere!!!
+		
+		<iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+		src="https://www.govtrack.us/congress/members/embed/mapframe?state=ms&district=4&bounds=-90.884,32.501,-87.541,29.671"></iframe> 
+		-->
+
+		<!-- Optional JavaScript; choose one of the two! -->
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+		<!-- Option 2: Separate Popper and Bootstrap JS -->
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+		-->
+		
+		<!--google search feed parameters
+		"alden johnson" site:clarionledger.com OR site:mississippitoday.org OR site:sunherald.com OR site:wlox.com
+		-->
+	
+  </body>
+  
+</html>
