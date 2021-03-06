@@ -9,11 +9,11 @@
 	
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
-
+	
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<!--My Own CSS-->
@@ -27,7 +27,7 @@
 			
 	<!--Title/tab-->
     <title>Alden for Congress</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/circlesmall.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/circle2small.png" />
 	
 	
   </head>
@@ -36,7 +36,7 @@
   
 <!--Navbar-->
 
-		<nav class="navbar navbar-expand-md navbar-dark">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid">
 			
 				<a class="navbar-brand" href="index.html"><img id="brandpic" class="d-inline-block align-top" src="images/banner.jpg"><span>Alden Johnson for Congress</span></a>
@@ -63,7 +63,7 @@
 						<li class="nav-item">
 						  <a class="nav-link" href="issues.html">Issues</a>
 						</li>
-					</u>
+					</ul>
 					<ul class="navbar-nav sm-icons">
 						<li class="nav-item"><a class="nav-link" href="http://facebook.com/alden4liberty"><i class="fa fa-facebook-square"></i></a></li>
 						<li class="nav-item"><a class="nav-link" href="http://instagram.com/alden4liberty"><i class="fa fa-instagram"></i></a></li>
@@ -90,28 +90,7 @@
 		</nav>
 		
 <!-- End Navbar -->		
-		
-		<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-          <iframe src="/user/dashboard" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>  
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-    <!-- /.modal-content -->
-  </div>
-  <!-- /.modal-dialog -->
- </div>
- <!--End Modal-->
+ 
 		
 <!-- Jumbotron -->
 
@@ -121,9 +100,13 @@
 			  <span class="lead">For Mississippi's 4th Congressional District</span>
 			  <hr>
 			  <p>All Your Freedoms, All the Time</p>
-			  <form id="contribute">
-				  <input type="email" id="contributeEmail" name="email" class="form-control" placeholder="Emailaddress@email.com"/>
-				  <input type="text" id="ContributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
+			  <form id="contributeName" class="row">
+				  <input type="text" id="contributeFirstName" name="firstName" class="form-control" placeholder="First Name"/>
+				  <input type="text" id="contributeLastName" name="lastName" class="form-control" placeholder="Last Name"/>
+				</form>
+				<form id="contributeContact" class="row">
+				  <input type="email" id="contributeEmail" name="email" class="form-control" placeholder="Email"/>
+				  <input type="text" id="contributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
 				  <a id="contributeButton" class="btn btn-primary btn-lg" href="#" role="button">Get Involved</a>
 			  </form>
 		  </div>
@@ -134,19 +117,161 @@
 
 		
 <!-- Main Body between navbar/jumbotron and footer -->
-		<div id="mainBody">
-			<p id="facebookFrame">
-				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Falden4liberty&tabs=timeline&width=500&height=340&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="340" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-			</p>
-
+	<div id="mainBody">
+		<section class="content-card-style-3 pt-90 pb-100">
+			<div class="container" id="homeIssuesBody">
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="content-title text-center">
+							<h1 class="title">On the Issues</h1>
+							<p><i>With liberty and justice for all...</i></p>
+						</div>
+					</div>
+				</div>
+            
+				<div class="row justify-content-center">
+					<div class="col-md-3 col-sm-8">
+						<div class="single-content mt-30 text-center">
+							<div class="content-image">
+								<img id="issuesCrime" src="images/crime.svg" alt="content">
+							</div>
+							<div class="content-content">
+								<h4 class="title">Criminal Justice</h4>
+								<p>As a first responder, Alden works closely with law enforcement on a regular basis. By legalizing cannabis at the federal level, ending qualified immunity, and ending the practice of civil asset forfeiture, law enforcement would be able to focus on more serious issues. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-8">
+						<div class="single-content mt-30 text-center">
+							<div class="content-image">
+								<img id="issuesTax" src="images/tax.svg" alt="content">
+							</div>
+							<div class="content-content">
+								<h4 class="title">Taxes</h4>
+								<p>Alden supports ending the state income tax, among other taxes. The government taxes us at every turn. This results in a poorer society, as a whole. By cutting frivolous and wasteful government spending, we could work towards slashing taxes.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-8">
+						<div class="single-content mt-30 text-center">
+							<div class="content-image">
+								<img id="issues2nd" src="images/gun2.svg" alt="content">
+							</div>
+							<div class="content-content">
+								<h4 class="title">2nd Amendment</h4>
+								<p>Alden fully supports repealing the NFA and abolishing the ATF. Prohibition only encourages a thriving black market. Rights are not just privileges. Felons who have paid their debt to society and pose no threat to the general public deserve to be able to protect their families via firearm ownership.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-8">
+						<div class="single-content mt-30 text-center">
+							<div class="content-image">
+								<img id="issuesJob" src="images/job.svg" alt="content">
+							</div>
+							<div class="content-content">
+								<h4 class="title">Jobs</h4>
+								<p>The best way to grow jobs is for government to get out of the way. Taxes, overcriminalization, extreme regulation, and professional licensing all reduce opportunity and prevent job growth. When becoming a barber requires twice as many hours as becoming a police officer, is it any wonder nobody can get a job?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-8">
+						<div class="content-title text-center">
+							<a class="btn btn-primary btn-lg" href="issues.html" id="moreIssuesButton">More Issues</a>
+							
+						</div>
+					</div>
+				</div>
+           
+			</div>
+		</section>
+		<div class="row col-md-12">
+			<img src="images/recipephoto.jpg" id="recipePhoto">
+			<div id="quoteCard">
+			  <h2 class="card-header">
+				Why am I running?
+			  </h2>
+			  <div class="card-body">
+				<blockquote class="blockquote mb-0">
+				  <p>This country was established by ruffling feathers; as well as demanding change, through action. Change doesn’t happen by making cheap campaign promises. It happens by challenging the status quo, and not taking no for an answer.</p>
+				  <footer class="blockquote-footer">Alden Johnson</footer>
+				</blockquote>
+				<hr>
+				<blockquote class="blockquote mb-0">
+					<p> We have people incarcerated who’s only “crime” was possessing cannabis. We are taxed at every turn. Our government prints billions of dollars, while simultaneously saying there is a coin shortage. Elected representatives vote yes on bills they don’t even bother reading.</p>
+					<footer class="blockquote-footer">Alden Johnson</footer>
+				</blockquote>
+				<hr>
+				<blockquote class="blockquote mb-0">
+					<p> 2020 was just the beginning. Voters are fed up with both “main” parties. Now is the time to be loud, and let the people know that we are the party of true representation and liberty.</p>
+					<footer class="blockquote-footer">Alden Johnson></footer><!--<cite title="Source Title"> GulfCoast Predator Catchers</cite></footer>-->
+				</blockquote>
+			  </div>
+			</div>
 		</div>
+		<hr class="bodyHR">
+		<h2>Local News</h2>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+		  <div class="col">
+			<div class="card h-100">
+			  <div class="card-header">
+				<img src="images/nytimes.png" class="mediaHeader"><span class="justify-content-end"><strong>Featured</strong></span>
+			  </div>
+			  <img src="images/nytimespalazzo.jpg" class="card-img-top" alt="...">
+			  <div class="card-body">
+				<h5 class="card-title">Mississippi Congressman Faces Allegations of Misusing Campaign Funds</h5><p>WASHINGTON — The House Ethics Committee is investigating Representative Steven M. Palazzo, Republican of Mississippi, for potential misuse of funds, after a preliminary inquiry found that he engaged in what investigators called a “concerning pattern” of spending more than $80,000 in campaign money on a $1.2 million waterfront house that he was trying to sell...</p>
+				<a href="https://www.nytimes.com/2021/03/02/us/politics/steve-palazzo-ethics-investigation.html?smid=url-sharehttps://mississippitoday.org/2020/12/18/house-ethics-committee-confirms-probe-into-rep-steven-palazzos-campaign-spending-whats-next/" class="btn btn-primary">Read more</a>
+			  </div>
+			  <div class="card-footer">
+				<small class="text-muted">Published 03/02/21</small>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col">
+			<div class="card h-100">
+			  <div class="card-header">
+				<img src="images/sunherald.svg" class="mediaHeader">
+			  </div>
+			  <img src="images/sunheraldmaskimage.jpg" class="card-img-top" alt="...">
+			  <div class="card-body">
+				<h5 class="card-title">Mississippi Coast mayors will not require masks in cities after Reeves ends mandate</h5>
+				<p class="card-text">BAY ST. LOUIS — Mayors across South Mississippi met online Wednesday morning to discuss whether they should add new local mask mandates and coronavirus restrictions after Gov. Tate Reeves on Tuesday rescinded all requirements except for K-12 schools and arenas.<p>
+				Unlike Texas Gov. Greg Abott’s order that forbids cities from establishing their own mask mandates, Reeves’ new order does not prevent local governments from establishing their own rules...</p></p>
+				<a href="https://www.sunherald.com/news/coronavirus/article249662338.html" class="btn btn-primary">Read more</a>
+			  </div>
+			 
+			  <div class="card-footer">
+				<small class="text-muted">Published 03/03/21</small>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col">
+			<div class="card h-100">
+			  <div class="card-header">
+				<img src="images/clarionledger.svg" class="mediaHeader">
+			  </div>
+			  <img src="images/EmpowerMSImage.jpg" class="card-img-top" alt="...">
+			  <div class="card-body">
+				<h5 class="card-title">Mississippi House proposes overhaul of several state taxes</h5>
+				<p class="card-text">JACKSON — Mississippi would phase out its personal income tax over 10 years, cut its grocery tax in half over five years and increase many other taxes, under a proposal being pushed by leaders in the Republican-controlled state House.<p>House Bill 1439 was expected to come up for a debate in the 122-member House on Tuesday after it passed the House Ways and Means Committee on Monday.</p></p>
+				<a href="https://www.clarionledger.com/story/news/politics/2021/02/23/mississippi-state-taxes-overhaul-proposal/4560318001/" class="btn btn-primary">Read more</a>
+			  </div>
+			  <div class="card-footer">
+				<small class="text-muted">Published 03/03/21</small>
+			  </div>
+			</div>
+		  </div>
+		</div>
+			
+	</div>
 		
 <!-- End Main Body -->
 				
 				
 <!-- Footer and Copywright Bar -->	
 	
-		<footer class="text-white text-center text-lg-start">
+		<footer id="footer" class="text-white text-center text-lg-start">
 		  <!-- Grid container -->
 		  <div class="container p-4">
 			<!--Grid row-->
@@ -156,7 +281,7 @@
 				<h4 class="text-uppercase">Alden for Congress</h4>
 
 				<p>
-				  <img id="banner" src="images/aldenjohnson.jpg">
+				  <img id="banner" src="images/banner.jpg">
 				</p>
 			  </div>
 			  <!--Grid column-->
@@ -219,13 +344,9 @@
 				  
 				  </div>
 
-			  
-
-			
-
 <!-- Copyright Bar -->
 
-		  <div class="text-center p-3" style="background-color: #F9D334">
+		  <div id="copywrightBar" class="text-center p-3">
 			
 			<p><span id="paidFor">Paid for by Friends of Alden Johnson</span></p>
 			© 2020 Copyright:
@@ -238,31 +359,6 @@
 		</footer>
 
 <!-- End Footer and Copywright Bar -->	
-
-
-<!-- Miscellaneous Notes/Saved items -->	
-		
-		<!--
-		Might include this somewhere!!!
-		
-		<iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-		src="https://www.govtrack.us/congress/members/embed/mapframe?state=ms&district=4&bounds=-90.884,32.501,-87.541,29.671"></iframe> 
-		-->
-
-		<!-- Optional JavaScript; choose one of the two! -->
-
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-		<!-- Option 2: Separate Popper and Bootstrap JS -->
-		<!--
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-		-->
-		
-		<!--google search feed parameters
-		"alden johnson" site:clarionledger.com OR site:mississippitoday.org OR site:sunherald.com OR site:wlox.com
-		-->
 	
   </body>
   
