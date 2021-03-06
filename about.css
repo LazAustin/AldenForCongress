@@ -10,25 +10,35 @@
 	}
 	
 
+	.btn-primary {
+		
+		border: none;
+		
+	}
+
 	.btn-primary:hover {
 	
+		color: #E2211B;
 		background-color: #F9D334;
+		border: none;
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 	
 	}
 		
 	#donate-link {
 	 
 		border-radius: 5px;
-		background-color: red;
+		background-color: #E2211B;
 		text-transform: uppercase;
 		padding-left: 10px;
 		padding-right: 10px;
+		color: white !important;
 		
 	}
 	
 	#donate-link:hover {
 		
-		background-color: black; 
+		/*background-color: black;*/ 
 				
 	}
 
@@ -65,21 +75,21 @@
 	
 	.navbar {
 	
-		background-color: #56565A;
-		border-bottom: 5px solid #F9D334;
-		color: #56565A;
+		background-color: white; /*#56565A;*/
+		border-bottom: 5px solid #0EB4DC;
+		color: #0EB4DC;
 		padding: 0;
 	
 	}
 	
 	.navbar .navbar-nav .nav-link {
     
-		color: #000000;
+		color: #0EB4DC;
 		font-size: 1.1em;
 	
 	}
 	
-		.navbar .navbar-nav .nav-link:hover {
+	.navbar .navbar-nav .nav-link:hover {
     
 		color: #F9D334;
 	
@@ -90,6 +100,7 @@
 		font-family: 'Lato', sans-serif;
 		font-size: 1.5em;
 		text-decoration: underline;
+		color: #E2211B !important;
 		
 	}
 	
@@ -109,10 +120,10 @@
 	
 	.navbar .nav-item .active {
 	
-		background-color: #F9D334;
+		/*background-color: #E2211B;*/
 		border-radius: 5px;
 		padding: cover;
-		color: #56565A !important; 
+		color: #E2211B !important;/*#56565A !important; */
 	
 	}
 	
@@ -122,7 +133,7 @@
 	  left: 0;
 	  right: 0;
 	  margin: auto;
-	  background-color: #F9D334;
+	  background-color: #E2211B;
 	  color: transparent;
 	  width: 0%;
 	  content: '.';
@@ -153,7 +164,7 @@
 	
 	#navbarNavDropdown a {
 		
-		color: #F9D334;
+		color: #0EB4DC;
 		
 	}
 	
@@ -164,13 +175,13 @@
 	
 	}
 	
-	@media only screen and (min-width: 1201px) {
+	@media only screen and (max-width: 600px) {
 	
-	.nav-item {
+		.navbar-brand span {
 
-			padding-right: 5em;
-		
-		}
+				display: none;
+			
+			}
 		
 	}
 	
@@ -183,6 +194,7 @@
 		}
 	
 	}
+	    
 	
 /* End Navbar */
 
@@ -192,6 +204,7 @@
 	#contributeButton, #contributeEmail, #contributeZip {
 		
 		margin: 5px 5px 5px 0;
+		display: none;
 		
 	}
 	
@@ -211,7 +224,14 @@
 	
 	.jumbotron {
 		margin: 0 auto;
-		background-image: url(images/mspic.jpg);
+		background: url(images/mspic.jpg);
+		/* 
+		linear-gradient(
+			to left,
+			rgba(0,0,0, 0),
+			rgba(249,211,52, 0.5)
+		  ), (might re-add some kind of linear gradient to the background image) 
+		  */
 		background-position: left bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -221,17 +241,10 @@
 		margin-bottom: 2rem;
 		border-radius: .3rem;
 		font-weight: bold;
-		border-bottom: 5px solid #F9D334;
 		overflow: hidden;
 		display: flex;
 		position: relative;
 		color: white;
-	}
-
-	.jumbotron h1 {
-		
-		color: black;
-		
 	}
 	
 	#jumbotronContent {
@@ -254,11 +267,31 @@
 		
 	}
 	
+	.jumbotron h1 {
+		
+		color: #0EB4DC;
+		
+	}
+	
+	.jumbotron p {
+		
+		color: #E2211B;
+		
+	}
+	
+	.jumbotron .btn-primary {
+		
+		background-color: #0EB4DC;
+		border: none;
+		
+	}
 	.lead {
 	
 		font-weight: bold;
 	
 	}
+	
+	
 	
 /*End Jumbotron*/
 	
@@ -291,17 +324,42 @@
 		width: cover;
 		max-width: 400px;
 		float: left;
-		margin: 10px;
+		margin-bottom: 20px;
+		margin-right: 25px;
 		border: 5px solid #555;
-		
 	}
 	
 	#aboutContainer {
 		
-		width: 100%;
+		width: 90%;
 		height: 100%;
-		margin-bottom: 50px;
-		overflow: auto;
+		margin: 25px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 550;
+		
+		
+		
+	}
+	
+	#aboutContainer p {
+		
+		margin-left: 25px;
+		
+	}
+		
+		
+	#aboutHR {
+		
+		width: 90%;
+		margin: 0 auto;
+		border: 1px solid #0EB4DC;
+		
+	}
+	
+	#aboutMainBody {
+		
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 550;
 		
 	}
 	
@@ -313,9 +371,11 @@
 
 	#ms4Container {
 		
-		width: 100%;
+		width: 90%;
 		height: 100%;
-		margin-bottom: 50px;
+		margin: 25px 25px 100px 25px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 550;
 		overflow: auto;
 		
 	}
@@ -325,15 +385,22 @@
 		width: cover;
 		max-width: 400px;
 		float: left;
-		margin: 10px;
+		margin-bottom: 25px;
+		margin-right: 25px;
 		border: 5px solid #555;
 		
 	}
 	
-	#placeholder {
+	#ms4Container p {
+		
+		margin-left: 25px;
+		
+	}
 	
-		height:500px;
-	
+	#ms4Container div {
+		
+		margin-top: 50px;
+		
 	}
 
 /* End Main Body */
@@ -341,6 +408,12 @@
 
 /* Footer and Copywright Bar */
 
+	#banner {
+	
+		width: 60%;
+	
+	}
+	
 	#contact {
 		
 		text-align: center;
@@ -348,11 +421,12 @@
 		
 	}
 	
-	footer {
+	#copywrightBar {
 		
-		border-top: 5px solid #F9D334;
+		background-color: #E2211B;
 		
 	}
+	
 	
 	footer a {
 		
@@ -362,7 +436,7 @@
 	
 	footer a:hover {
 		
-		color: #F9D334 !important;
+		color: #E2211B !important;
 		
 	}
 	
@@ -382,7 +456,7 @@
 	}
 	.text-white {
 	
-		background-color: #56565A;
+		background-color: #0EB4DC;
 		
 	}
 
