@@ -19,7 +19,9 @@
 	<!--My Own CSS-->
 	<link rel="stylesheet" href="issues.css">
 	<!--jQuery CSS-->
-	<link href="jquery-ui.css" rel="stylesheet">		
+	<link href="jquery-ui.css" rel="stylesheet">
+	<!--Cards CSS-->
+	
 	
 	<!--Basic jQuery and jQueryUI scripts-->
 	<script type="text/javascript" src="jquery.min.js"></script>
@@ -27,19 +29,19 @@
 			
 	<!--Title/tab-->
     <title>Alden for Congress</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/circlesmall.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/circle2small.png" />
 	
 	
   </head>
   
-  <body>
+  <body class="grey lighten-2">
   
 <!--Navbar-->
 
-		<nav class="navbar navbar-expand-md navbar-dark">
+		<nav class="navbar navbar-expand-md navbar-light">
 			<div class="container-fluid">
 			
-				<a class="navbar-brand" href="index.html"><img id="brandpic" class="d-inline-block align-top" src="images/banner.jpg" alt="">Alden Johnson for Congress</a>
+				<a class="navbar-brand" href="index.html"><img id="brandpic" class="d-inline-block align-top" src="images/banner.jpg"><span>Alden Johnson for Congress</span></a>
 				
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
 				</button>
@@ -49,11 +51,11 @@
 					<ul class="navbar-nav">
 						
 						<li class="nav-item">
-						  <a id="donate-link" class="nav-link" aria-current="page" href="donate.html">Donate</a>
+						  <a id="donate-link" class="nav-link" aria-current="page" href="https://secure.anedot.com/alden-for-congress/donate">Donate</a>
 						</li>
 						
 						<li class="nav-item">
-						  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+						  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
 						
 						<li class="nav-item">
@@ -61,9 +63,9 @@
 						</li>
 						
 						<li class="nav-item">
-						  <a class="nav-link active" href="issues.html">Issues</a>
+						  <a class="nav-link" href="issues.html">Issues</a>
 						</li>
-					</u>
+					</ul>
 					<ul class="navbar-nav sm-icons">
 						<li class="nav-item"><a class="nav-link" href="http://facebook.com/alden4liberty"><i class="fa fa-facebook-square"></i></a></li>
 						<li class="nav-item"><a class="nav-link" href="http://instagram.com/alden4liberty"><i class="fa fa-instagram"></i></a></li>
@@ -102,7 +104,7 @@
 			  <p>All Your Freedoms, All the Time</p>
 			  <form id="contribute">
 				  <input type="email" id="contributeEmail" name="email" class="form-control" placeholder="Emailaddress@email.com"/>
-				  <input type="text" id="ContributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
+				  <input type="text" id="contributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
 				  <a id="contributeButton" class="btn btn-primary btn-lg" href="#" role="button">Get Involved</a>
 			  </form>
 		  </div>
@@ -112,73 +114,122 @@
 <!-- End Jumbotron -->
 
 <!-- Main Body -->
-		<div id="bodyContainer">
-
-			<div class="d-flex border p-3">
-				<img src="images/ajtruck.jpg"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>Qualified Immunity</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-			</div>
-			
-			<div class="d-flex border p-3">
-				<img src="images/ajwife.jpg"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>Civil Asset Forfeiture</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-			</div>
-			
-			<div class="d-flex border p-3">
-				<img src="images/ajwedding.jpg"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>Defunding the Police</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-				
-			</div>
-				
-			<div class="d-flex border p-3">
-				<img src="images/StatueOfLibertyFlag.png"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>No Knock Raids</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-			</div>
-			
-			<div class="d-flex border p-3">
-				<img src="images/palazzomeme.jpg"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>Medical Marijuana</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-				
-			</div>
-			
-			<div class="d-flex border p-3">
-				<img src="images/ajfireacademy.jpg"
-					 class="flex-shrink-0 mr-3 mt-3 rounded-circle" style="width:60px;height:60px;">
-				<div>
-					<h4>Victimless Crimes</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.</p>
-				</div>
-				
-			</div>
-			
-		</div>
+		<div id="bodyContainer" class="container">
 		
+			<div class="bs-example blue">
+				<div class="card">
+					<div class="row no-gutters">
+					
+						<div class="col-sm-5">
+							<img src="images/crimeTape.jpg" class="cardImages card-img-top h-100">
+						</div>
+						
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">Criminal Justice Reform</h5>
+								<p class="card-text">Alden believes that if the “crime" has no victim, then there is no crime. Possessing a plant, braiding hair without a license, and collecting rainwater should never have been crimes to begin with. It’s time to put the power back in the people’s hands.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="bs-example red">
+				<div class="card">
+					<div class="row no-gutters flipped">
+
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">Jobs and the Economy</h5>
+								<p class="card-text">Alden believes if the government just got out of everybody's way, there would be a lot more opportunity for everyone. The vast majority of entrepreneurs and workers should not be required to spend hundreds or thousands of dollars and hours of their time getting certified and licensed by government agencies. Government does everything it can to restrict prosperity. Let the people work! </p>
+							</div>
+						</div>
+						
+						<div class="col-sm-5">
+							<img src="images/forHire.jpg" align="right" class="cardImages cardImages card-img-top h-100 rightImages">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="bs-example blue">
+				<div class="card">
+					<div class="row no-gutters">
+					
+						<div class="col-sm-5">
+							<img src="images/taxes.jpg" class="cardImages card-img-top h-100">
+						</div>
+						
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">Taxes</h5>
+								<p class="card-text">Alden supports the elimination of the income tax, both in Mississippi and federally. He believes in reducing the role, size, and scope of government as much as possible and the subsequent reduction of as many taxes as possible.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="bs-example red">
+				<div class="card">
+					<div class="row no-gutters flipped">
+
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">National Defense</h5>
+								<p class="card-text">National defense should mean just that: defense. It’s time we stop trying to be the world’s police. Antagonizing other countries on a regular basis does not make us any safer.</p>
+							</div>
+						</div>
+						
+						<div class="col-sm-5">
+							<img src="images/military.jpg" align="right" class="cardImages cardImages card-img-top h-100 rightImages">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="bs-example blue">
+				<div class="card">
+					<div class="row no-gutters">
+					
+						<div class="col-sm-5">
+							<img src="images/energy.jpg" class="cardImages card-img-top h-100">
+						</div>
+						
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">Energy</h5>
+								<p class="card-text">While Alden realizes that oil and gas are not going anywhere, he fully supports expanding nuclear energy. In this day and age, it is cleaner, safer, and can produce enormous amounts of electricity.</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="bs-example red">
+				<div class="card">
+					<div class="row no-gutters flipped">
+
+						<div class="col-sm-7">
+							<div class="card-body">
+								<h5 class="card-title">2nd Amendment</h5>
+								<p class="card-text">Alden fully supports repealing the NFA and abolishing the ATF. Prohibition only encourages a thriving black market. Rights are not just privileges. Felons who have paid their debt to society and pose no threat to the general public deserve to be able to protect their families via firearm ownership.</p>
+							</div>
+						</div>
+						
+						<div class="col-sm-5">
+							<img src="images/gun.jpg" align="right" class="cardImages cardImages card-img-top h-100 rightImages">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
 		</div>
 
 <!-- End Main Body -->
@@ -195,7 +246,7 @@
 						<h4 class="text-uppercase">Alden for Congress</h4>
 
 						<p>
-							<img id="banner" src="images/aldenjohnson.jpg">
+							<img id="banner" src="images/banner.jpg">
 						</p>
 					</div>
 			  <!--Grid column-->
@@ -260,7 +311,7 @@
 
 <!-- Copyright Bar -->
 
-			<div class="text-center p-3" style="background-color: #F9D334">
+			<div id="copywrightBar" class="text-center p-3">
 			
 				<p><span id="paidFor">Paid for by Friends of Alden Johnson</span></p>
 				© 2020 Copyright:
