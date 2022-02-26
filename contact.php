@@ -1,6 +1,67 @@
 <?php
+	
+	$error = "";
+	
+	$successMessage = "";
+	
+	if ($_POST) {
+	
+		if (!$_POST["email"]) {
+		
+			$error .= "An email address is required.<br>";
+			
+		}
+		
+		if ($_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false) {
+		
+			$error .= "The email address is invalid.<br>";
+			
+		}
+		
+		
+		if (!$_POST["subject"]) {
+		
+			$error .= "The subject field is required.<br>";
+		
+		}
+		
+		if (!$_POST["content"]) {
+		
+			$error .= "The content field is required.<br>";
+			
+		}
+		
+		if ($error != ""){
+		
+			$error .= '<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' . $error . '</div>';
+		
+		} else {
 
-	include("contactForm.php");
+			$emailTo = "lazaustin94@gmail.com";
+			
+			$subject = $_POST["subject"]." AldenForCongress";
+			
+			$content = $_POST["content"]."\n\n The above email is from ".$_POST["firstName"]." ".$_POST["lastName"]." (".$_POST["email"].") using the contact page on the AldenForJohnson website. As of coding this, if you reply it will be from whatever email account you are using. -Laz";
+			
+			$content = wordwrap($content, 70);
+			
+			$headers = 'From: admin@lazaustin.com' . "\r\n" .'Reply-To: ' . $_POST["email"];
+			
+			if (mail($emailTo, $subject, $content, $headers)) {
+				
+				$successMessage = '<div class="alert alert-success" role="alert"><strong>Your message was sent!</strong><br>We will get back to you soon.</div>';
+				
+
+				
+				
+				
+			} else {
+				
+				$error = '<div class="alert alert-success" role="alert"><strong>There were error(s) in your form:</strong> Your message could not be sent. Please try again. </div>';
+				
+			}
+		}
+	}
 
 ?>
 
@@ -83,12 +144,12 @@
 						<li class="nav-item">
 						  <a class="nav-link active" href="contact.php">Contact</a>
 						</li>
-						
 					
 						<ul class="navbar-nav sm-icons">
 							<li class="nav-item"><a class="nav-link" href="http://facebook.com/alden4liberty"><i class="fa fa-facebook-square"></i></a></li>
 							<li class="nav-item"><a class="nav-link" href="http://instagram.com/alden4liberty"><i class="fa fa-instagram"></i></a></li>
 						</ul>
+						
 					</ul>
 						<!-- Might put back later						
 						<li class="nav-item dropdown">
@@ -111,7 +172,7 @@
 			</div>
 		</nav>
 		
-<!-- End Navbar -->		
+<!-- End Navbar -->			
  
 		
 <!-- Jumbotron -->
@@ -122,15 +183,6 @@
 			  <span class="lead">For Mississippi's 4th Congressional District</span>
 			  <hr>
 			  <p>All Your Freedoms, All the Time</p>
-			  <form id="contributeName" class="row">
-				  <input type="text" id="contributeFirstName" name="firstName" class="form-control" placeholder="First Name"/>
-				  <input type="text" id="contributeLastName" name="lastName" class="form-control" placeholder="Last Name"/>
-				</form>
-				<form id="contributeContact" class="row">
-				  <input type="email" id="contributeEmail" name="email" class="form-control" placeholder="Email"/>
-				  <input type="text" id="contributeZip" name="zip"  pattern="[0-9]*" class="form-control" placeholder="Zip Code">
-				  <a id="contributeButton" class="btn btn-primary btn-lg" href="#" role="button">Get Involved</a>
-			  </form>
 		  </div>
 		  <img id="jumbotronImage" src="images/aldenjohnsoncropped.png">
 		</div>
@@ -139,35 +191,53 @@
       
 		<div id="mainBody" class="container">
       
-			<h1>Get in touch!</h1>
+			<h1>Contact Us</h1>
+			
+			<h2>Our campaign to restore integrity and liberty to Mississippi needs the support of everyday Mississippians like you. Fill out the form and let us know what's on your mind.<h2>
+			
+			<br>
       
 			<div id="error"><? echo $error.$successMessage; ?></div>
 		  
-			<form id="contactForm" method="post">
+			<form id="contactForm" action="contactForm.php" method="post">
 			
-				  <fieldset class="form-group mt-2">
-				  
+				<fieldset class="row mt-2">
+				
+					<div class="col">
+						<label for="firstName">First Name</label>
+						<input type="text" class="form-control" placeholder="First name (optional)" name="firstName" id="firstName">
+					</div>
+					
+					<div class="col">
+						<label for="lastName">Last Name</label>
+						<input type="text" class="form-control" placeholder="Last name (optional)" name="lastName" id="lastName">
+					</div>
+					
+				</fieldset>
+			
+			    <fieldset class="form-group mt-2">
+			  
 					<label for="email">Email address</label>
 					<input type="email" class="form-control mt-2" id="email" name="email" placeholder="Enter email">
-					<small class="text-muted">We'll never share your email with anyone else.</small>
-					
-				  </fieldset>
-				  
-				  <fieldset class="form-group mt-2"> 
-				  
+					<small class="text-muted">We will never share your email with anyone else.</small>
+				
+			    </fieldset>
+			  
+			    <fieldset class="form-group mt-2"> 
+			  
 					<label for="subject">Subject</label>
 					<input type="text" class="form-control mt-2" id="subject" name="subject" placeholder="Enter a subject">
-					
-				  </fieldset>
-				  
-				  <fieldset class="form-group mt-2">
-				  
+				
+			    </fieldset>
+			  
+			    <fieldset class="form-group mt-2">
+			  
 					<label for="exampleTextarea">What would you like to ask us?</label>
 					<textarea class="form-control mt-2" id="content" name="content" rows="3"></textarea>
-					
-				  </fieldset>
-				  
-				  <button type="submit" id="submit" class="btn btn-primary mt-2">Submit</button>
+				
+			    </fieldset>
+			  
+			    <button type="submit" id="submit" class="btn btn-primary mt-2">Submit</button>
 			  
 			</form>
           
@@ -177,44 +247,43 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-          
-          
+		
 		<script type="text/javascript">
           
-          $("form").submit(function(e) {
-              
-              var error = "";
-              
-              if ($("#email").val() == "") {
-                  
-                  error += "The email field is required.<br>"
-                  
-              }
-              
-              if ($("#subject").val() == "") {
-                  
-                  error += "The subject field is required.<br>"
-                  
-              }
-              
-              if ($("#content").val() == "") {
-                  
-                  error += "The content field is required.<br>"
-                  
-              }
-              
-              if (error != "") {
-                  
-                 $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
-                  
-                  return false;
-                  
-              } else {
-                  
-                  return true;
-                  
-              }
-          })
+			$("form").submit(function(e) {
+				  
+				var error = "";
+				  
+				if ($("#email").val() == "") {
+					  
+					  error += "The email field is required.<br>"
+					  
+				}
+				  
+				if ($("#subject").val() == "") {
+					  
+					  error += "The subject field is required.<br>"
+					  
+				}
+				  
+				if ($("#content").val() == "") {
+					  
+					  error += "The content field is required.<br>"
+					  
+				}
+				  
+				if (error != "") {
+					  
+					 $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+					  
+					return false;
+					  
+				} else {
+					  
+					return true;
+					  
+				}
+			})
           
 		</script>
 				
@@ -241,7 +310,7 @@
 				<h5 class="text-uppercase mb-0">Menu</h5>
 				<ul class="list-unstyled">
 				  <li><a href="index.html" class="text-white">Home</a></li>
-				  <li><a href="donate.html" class="text-white">Donate</a></li>
+				  <li><a href="https://secure.anedot.com/alden-for-congress/donate" class="text-white">Donate</a></li>
 				  <li><a href="about.html" class="text-white">About</a></li>
 				  <li><a href="issues.html" class="text-white">Issues</a></li>
 				</ul>
@@ -313,6 +382,11 @@
 		<iframe width="425" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
 		src="https://www.govtrack.us/congress/members/embed/mapframe?state=ms&district=4&bounds=-90.884,32.501,-87.541,29.671"></iframe> 
 		-->
+		
+		    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 	
   </body>
   

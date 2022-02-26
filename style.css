@@ -224,7 +224,7 @@
 	
 	.jumbotron {
 		margin: 0 auto;
-		background: url(images/mspic.jpg);
+		background: url(images/jackson.jpg);
 		/* 
 		linear-gradient(
 			to left,
@@ -232,7 +232,7 @@
 			rgba(249,211,52, 0.5)
 		  ), (might re-add some kind of linear gradient to the background image) 
 		  */
-		background-position: left bottom;
+		background-position: left center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		
