@@ -10,7 +10,7 @@
 	}
 	
 
-	.btn-primary {
+	btn-primary {
 		
 		border: none;
 		
@@ -89,7 +89,7 @@
 	
 	}
 	
-	.navbar .navbar-nav .nav-link:hover {
+		.navbar .navbar-nav .nav-link:hover {
     
 		color: #F9D334;
 	
@@ -314,6 +314,17 @@
   
 	}
 	
+		
+	@media only screen and (min-width: 750px) {
+		
+		.jumbotron {
+		
+			min-height: 450px;
+		
+		}
+	
+	}
+	
 	
 	
 /*End Jumbotron*/
@@ -359,13 +370,13 @@
 		
 	}
 	
-	#issuesCrime, #issues2nd {
+	#issuesCrime, #issuesJob {
 		
 		filter: invert(50%) sepia(29%) saturate(4009%) hue-rotate(157deg) brightness(105%) contrast(89%);
 		
 	}
 	
-	#issuesTax, #issuesJob {
+	#issuesTax, #issues2nd {
 		
 		filter: invert(15%) sepia(86%) saturate(4697%) hue-rotate(355deg) brightness(93%) contrast(89%);
 		
@@ -388,9 +399,10 @@
 	#recipePhoto {
 		
 		float: left;
-		margin-bottom: 25px;
+		margin: 25px auto;
 		width: 45%;
-		border-radius: 30px;
+		border-radius: 50px;
+		display: none;
 		
 		
 	}
@@ -398,7 +410,7 @@
 	#quoteCard {
 		
 		margin: 0 auto;
-		width: 45%;
+		width: 80%;
 		border: 1px solid black;
 		padding: 0;
 		
@@ -411,6 +423,17 @@
 	}
 	
 	@media only screen and (max-width: 1200px) {
+		
+		#quoteCard {
+		
+			width: 90%;
+			margin: 0 auto;
+		
+		}
+
+	}
+	
+	@media only screen and (min-width: 501px) and (max-width: 1200px) {
 	
 		#recipePhoto {
 		
@@ -418,11 +441,14 @@
 			margin: 25px auto;
 		
 		}
+
+	}
+	
+	@media only screen and (max-width: 500px) {
+	
+		#recipePhoto {
 		
-		#quoteCard {
-		
-			width: 90%;
-			margin: 0 auto;
+			display: none;
 		
 		}
 

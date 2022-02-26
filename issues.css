@@ -10,25 +10,35 @@
 	}
 	
 
+	btn-primary {
+		
+		border: none;
+		
+	}
+
 	.btn-primary:hover {
 	
+		color: #E2211B;
 		background-color: #F9D334;
+		border: none;
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 	
 	}
 		
 	#donate-link {
 	 
 		border-radius: 5px;
-		background-color: red;
+		background-color: #E2211B;
 		text-transform: uppercase;
 		padding-left: 10px;
 		padding-right: 10px;
+		color: white !important;
 		
 	}
 	
 	#donate-link:hover {
 		
-		background-color: black; 
+		/*background-color: black;*/ 
 				
 	}
 
@@ -65,16 +75,16 @@
 	
 	.navbar {
 	
-		background-color: #56565A;
-		border-bottom: 5px solid #F9D334;
-		color: #56565A;
+		background-color: white; /*#56565A;*/
+		border-bottom: 5px solid #0EB4DC;
+		color: #0EB4DC;
 		padding: 0;
 	
 	}
 	
 	.navbar .navbar-nav .nav-link {
     
-		color: #000000;
+		color: #0EB4DC;
 		font-size: 1.1em;
 	
 	}
@@ -90,6 +100,7 @@
 		font-family: 'Lato', sans-serif;
 		font-size: 1.5em;
 		text-decoration: underline;
+		color: #E2211B !important;
 		
 	}
 	
@@ -109,10 +120,10 @@
 	
 	.navbar .nav-item .active {
 	
-		background-color: #F9D334;
+		/*background-color: #E2211B;*/
 		border-radius: 5px;
 		padding: cover;
-		color: #56565A !important; 
+		color: #E2211B !important;/*#56565A !important; */
 	
 	}
 	
@@ -122,7 +133,7 @@
 	  left: 0;
 	  right: 0;
 	  margin: auto;
-	  background-color: #F9D334;
+	  background-color: #E2211B;
 	  color: transparent;
 	  width: 0%;
 	  content: '.';
@@ -153,7 +164,7 @@
 	
 	#navbarNavDropdown a {
 		
-		color: #F9D334;
+		color: #0EB4DC;
 		
 	}
 	
@@ -164,11 +175,11 @@
 	
 	}
 	
-	@media only screen and (min-width: 1201px) {
+	@media only screen and (max-width: 600px) {
 	
-	.nav-item {
+	.navbar-brand span {
 
-			padding-right: 5em;
+			display: none;
 		
 		}
 		
@@ -183,6 +194,7 @@
 		}
 	
 	}
+	    
 	
 /* End Navbar */
 
@@ -192,6 +204,7 @@
 	#contributeButton, #contributeEmail, #contributeZip {
 		
 		margin: 5px 5px 5px 0;
+		display: none;
 		
 	}
 	
@@ -211,7 +224,14 @@
 	
 	.jumbotron {
 		margin: 0 auto;
-		background-image: url(images/mspic.jpg);
+		background: url(images/mspic.jpg);
+		/* 
+		linear-gradient(
+			to left,
+			rgba(0,0,0, 0),
+			rgba(249,211,52, 0.5)
+		  ), (might re-add some kind of linear gradient to the background image) 
+		  */
 		background-position: left bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -221,17 +241,10 @@
 		margin-bottom: 2rem;
 		border-radius: .3rem;
 		font-weight: bold;
-		border-bottom: 5px solid #F9D334;
 		overflow: hidden;
 		display: flex;
 		position: relative;
 		color: white;
-	}
-
-	.jumbotron h1 {
-		
-		color: black;
-		
 	}
 	
 	#jumbotronContent {
@@ -254,9 +267,37 @@
 		
 	}
 	
+	.jumbotron h1 {
+		
+		color: #0EB4DC;
+		
+	}
+	
+	.jumbotron p {
+		
+		color: #E2211B;
+		
+	}
+	
+	.jumbotron .btn-primary {
+		
+		background-color: #0EB4DC;
+		border: none;
+		
+	}
 	.lead {
 	
 		font-weight: bold;
+	
+	}
+	
+	@media only screen and (min-width: 750px) {
+		
+		.jumbotron {
+		
+			min-height: 450px;
+		
+		}
 	
 	}
 	
@@ -265,40 +306,83 @@
 
 /* Main Body between Header/Jumbotron and Footer */
 
-	body {
+		.bs-example {
+			
+			margin: 25px;
+			font-family: Arial, Helvetica, sans-serif;
+			border-radius: 5px;
+			
+		}
 		
-		height: 100%;
+		.bs-example h5 {
+			
+			font-weight: 800;
+			
+		}
 		
-	}
-	
-	#bodyContainer {
-		
-		margin: 50px;
-		height: 100%;
-		max-width: 1500px;
-		
-	}
+		.bs-example.blue {
+			
+			position: relative;
+			
+		}
+				
+		.bs-example.blue {
 
-	#bodyContainer .border {
+			box-shadow: -5px 5px 5px #0EB4DC;
+			
+		}
 		
-			margin: 10px;
-			border-radius: 10px;
-			justify-content: center;
-	
-	}
-	
-		#bodyContainer img {
+		.bs-example.red {
+			
+			 box-shadow: 5px 5px 5px #E2211B;
+			
+		}
 		
-			margin-right: 10px;
+		.bs-example btn-primary:hover {
+			
+			box-shadow: 0 0 6px rgba(35, 173, 278, 1) !important;
+			
+		}
+		
+		.card {
+			
+			max-width: 1500px;
+			
+		}
+		
+		.cardImages {
+			
+			max-width: 400px;
+			max-height: 300px;
+		
+		}
+		
+		.rightImages {
+			
+		}
+		
+		
+		@media only screen and (max-width: 575px) {
 	
-	}
+			.flipped {
+				flex-direction: column-reverse;
+			}
 	
+		}
+		
+
 
 /* End Main Body */
 
 
 /* Footer and Copywright Bar */
 
+	#banner {
+	
+		width: 60%;
+	
+	}
+	
 	#contact {
 		
 		text-align: center;
@@ -306,11 +390,12 @@
 		
 	}
 	
-	footer {
+	#copywrightBar {
 		
-		border-top: 5px solid #F9D334;
+		background-color: #E2211B;
 		
 	}
+	
 	
 	footer a {
 		
@@ -320,7 +405,7 @@
 	
 	footer a:hover {
 		
-		color: #F9D334 !important;
+		color: #E2211B !important;
 		
 	}
 	
@@ -340,7 +425,7 @@
 	}
 	.text-white {
 	
-		background-color: #56565A;
+		background-color: #0EB4DC;
 		
 	}
 
